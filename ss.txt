@@ -1,0 +1,28 @@
+ 
+  javac -cp `hadoop classpath` -d . MatrixMultiplication.java
+jar cf mm.jar *.class
+ 
+ hadoop jar mm.jar MatrixMultiplication /test /output 2 2
+
+hdoop@rc-balaji-1-2:~/Downloads/java/new1$ 
+
+
+
+
+hdoop@rc-balaji-1-2:~/Downloads/java/new1$
+
+
+
+
+
+
+javac -cp `hadoop classpath` -d . WordCount.java
+
+
+jar cvf wordcount.jar *.class
+
+
+hadoop fs -put sample.txt /sam/
+
+
+hadoop jar wordcount.jar WordCount /sam/ /samout1/
